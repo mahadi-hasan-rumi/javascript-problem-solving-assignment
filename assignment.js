@@ -17,6 +17,25 @@ const total = woodCalculator(2, 3, 4)
 console.log(total);
 
 
+function brickCalculator(floor){
+    if(floor <= 10){
+        var feet1 = floor * 15;
+        var brick = feet1 * 1000;
+    }
+    else if(floor <= 20){
+        var feet2 = floor * 12;
+        var brick = feet2 * 1000;
+    }
+    else if(floor > 20){
+        var feet3 = floor * 10;
+        var brick = feet3 * 1000;
+    }
+    return brick;
+
+}
+ 
+
+
 
   function tinyFriend(name){
       let shortest = name[0];
